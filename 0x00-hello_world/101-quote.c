@@ -1,8 +1,7 @@
-#include <stdio.h>
 #include <unstd.h>
 /**
  * main - and that piece of art is useful\"
- * - Dora Korpar, 2015-10-19
+ * - Dora Korpar,
  * Return: 1
  */
 int main(void)
