@@ -8,11 +8,12 @@
  * @size: size of the array
  * @action: pointer to function used
  */
+
 void array_iterator(int *array, size_t size, void (*action) (int))
 {
 	unsigned int i;
 
-	if (!arrsy || !action)
+	if (!array || !action)
 		return;
 
 	for (i = 0; i < size; i++)
