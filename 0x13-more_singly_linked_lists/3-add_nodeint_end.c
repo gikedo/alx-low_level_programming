@@ -1,18 +1,23 @@
 #include "lists.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
- * add_nodeint_end introduces a node at the buttom of a linked list
- * @head: pointer to the first element in the list
- * @n: data to put into the new element
- *
- * Return: pointer to the fresh node, or NULL if it fails
+ *add_nodeint_end introduces a node at the buttom of a linked list
+ *@head: pointer to the first element in the list
+ *@n: data to put into the new element
+ *Return: pointer to the fresh node, or NULL if it fails
  */
+
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
+	/* declaration */
 	listint_t *fresh;
 	listint_t *voll = *head;
-
+	
+	/* memory allocation */
 	fresh = malloc(sizeof(listint_t));
+	
 	if (!fresh)
 		return (NULL);
 
