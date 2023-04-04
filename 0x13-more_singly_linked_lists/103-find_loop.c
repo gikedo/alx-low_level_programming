@@ -21,10 +21,11 @@ listint_t *find_listint_loop(listint_t *head)
 		if (swift == down)
 		{
 			down = head;
-			do {
+			while (down != swift)
+			{
 				down = down->next;
 				swift = swift->next;
-			} while (down != swift);
+			}
 			return (swift);
 		}
 	}
