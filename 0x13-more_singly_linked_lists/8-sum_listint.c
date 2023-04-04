@@ -14,7 +14,7 @@ int sum_listint(listint_t *head)
 	do {
 		join += voll->n;
 		voll = voll->next;
-	} while (voll)
+	} while (voll);
 
 	return (join);
 }
