@@ -11,10 +11,10 @@ int sum_listint(listint_t *head)
 	int join = 0;
 	listint_t *voll = head;
 
-	do {
+	while (voll)
+	{
 		join += voll->n;
 		voll = voll->next;
-	} while (voll);
-
+	}
 	return (join);
 }
