@@ -5,19 +5,19 @@
  * @head: pointer to the first node in the list
  * @n: data to insert in that new node
  *
- * Return: pointer to the new node, or NULL if it fails
+ * Return: A pointer to the new node, or gives NULL if it fails
  */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
-	listint_t *new;
+	listint_t *fresh;
 
-	new = malloc(sizeof(listint_t));
-	if (!new)
+	fresh = malloc(sizeof(listint_t));
+	if (!fresh)
 		return (NULL);
 
-	new->n = n;
-	new->next = *head;
-	*head = new;
+	fresh->n = n;
+	fresh->next = *head;
+	*head = fresh;
 
-	return (new);
+	return (fresh);
 }
